@@ -86,7 +86,7 @@ class Web:
             self.display_data_checks(df)
             self.display_section_counts_bar_plot(df)
 
-            st.header("Predictor")
+            # st.header("Predictor")
             X = df.text.values
             model = joblib.load("model.sav")
             self.display_result(X, model)
